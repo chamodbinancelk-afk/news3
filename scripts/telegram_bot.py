@@ -8,9 +8,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Importing API and Tokens from dotenv file.
-TOKEN = os.getenv('8299929776:AAGKU7rkfakmDBXdgiGSWzAHPgLRJs-twZg')
-NEWS_API_KEY = os.getenv('https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=3833ef78b7a64b69ab901ca66e49d6dc')
-TARGET_CHAT_ID = os.getenv('-1003177936060')
+TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
+NEWS_API_KEY = os.getenv('NEWS_API_KEY')
+TARGET_CHAT_ID = os.getenv('TARGET_CHAT_ID')
 
 
 def fetch_technology_news(api_key, country='in', category='technology', num_articles=5):
